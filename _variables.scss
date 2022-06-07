@@ -1,0 +1,82 @@
+.color-yellow {
+  background-color: #e2b748;
+}
+.color-green {
+  background-color: #70e248;
+}
+.color-pink {
+  background-color: #e248c0;
+}
+
+.text-yellow {
+  color: #e2b748;
+  border-bottom: 2px solid transparent;
+
+  &:hover {
+    border-bottom: 2px solid #70e248;
+  }
+}
+.text-green {
+  color: #70e248;
+  border-bottom: 2px solid transparent;
+
+  &:hover {
+    border-bottom: 2px solid #e248c0;
+  }
+}
+.text-pink {
+  color: #e248c0;
+  border-bottom: 2px solid transparent;
+
+  &:hover {
+    border-bottom: 2px solid #e2b748;
+  }
+}
+
+.eva {
+  margin-right: 1.2rem;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.mleft {
+  margin-left: 6rem;
+}
+
+.margin-top {
+  margin-top: 1.6rem !important;
+}
+
+.shadow {
+  box-shadow: 1px 1px 0 #000, 2px 2px 0 #000, 3px 3px 0 #000;
+}
+
+.fit {
+  max-width: fit-content;
+}
+
+.auto {
+  margin: 0 auto;
+}
+
+.margin-top {
+  margin-top: 7.2rem !important;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.font-small {
+  font-size: 2rem !important;
+}
+
+.project2-img {
+  width: 55rem;
+  height: 30rem;
+  outline: 2px solid #000;
+}

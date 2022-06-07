@@ -1,0 +1,251 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Oswald", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffdca8;
+}
+
+.nav {
+  background-color: #000;
+}
+
+.nav,
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 120rem;
+  margin: 0 auto;
+
+  &__title {
+    color: #ffdca8;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+    text-decoration: underline;
+    margin-left: 2.4rem;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-weight: 800;
+    margin-right: 2.4rem;
+
+    &-item {
+      padding: 1.2rem;
+      font-size: 2rem;
+      font-weight: 800;
+      text-transform: uppercase;
+
+      &-link {
+        text-decoration: none;
+        border-bottom: 2px solid #000;
+        transition: 0.2s ease;
+        color: #ffdca8;
+
+        &-1 {
+          &:hover {
+            color: #48d0e2;
+            text-shadow: 1px 1px #000;
+            border-bottom: 2px solid #48d0e2;
+          }
+        }
+        &-2 {
+          &:hover {
+            color: #70e248;
+            text-shadow: 1px 1px #000;
+            border-bottom: 2px solid #70e248;
+          }
+        }
+        &-3 {
+          &:hover {
+            color: #e248c0;
+            text-shadow: 1px 1px #000;
+            border-bottom: 2px solid #e248c0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  max-height: 80vh;
+  display: flex;
+  // flex-direction: column;
+  margin-top: 12rem;
+  align-items: center;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: -6rem;
+
+    &-subtitle {
+      font-size: 3.4rem;
+      letter-spacing: 1.5px;
+    }
+
+    &-img {
+      margin-left: 10rem;
+    }
+  }
+
+  &-image {
+    width: 25rem;
+    height: 25rem;
+    display: grid;
+    place-content: center;
+    margin-top: 4rem;
+    transition: all 0.5s ease;
+    margin-right: 8rem;
+
+    &-animated {
+      animation-name: rotate;
+      animation-duration: 8s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+
+      &:hover {
+        animation-play-state: paused;
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.section-contact {
+  margin-top: 6.4rem;
+}
+
+.footer {
+  background-color: #000;
+  text-align: center;
+  padding-top: 0.5rem;
+
+  &__mail {
+    color: #e248c0;
+    font-size: 1.6rem;
+    &-link {
+      font-size: 1.6rem;
+      color: #48d0e2;
+      transition: 0.3s ease;
+      &:hover {
+        text-decoration: none;
+        color: #ffdca8;
+      }
+      &-container {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  &__list {
+    list-style: none;
+    color: #70e248;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+
+    &-item {
+      text-align: center;
+      margin: 2.4rem;
+      font-size: 2.4rem;
+
+      &-link {
+        text-decoration: none;
+
+        &:hover {
+          border-bottom: 2px solid #48d0e2;
+        }
+      }
+    }
+  }
+}
+
+.section-about {
+  background-color: aliceblue;
+  max-width: 45%;
+  margin: 0 auto;
+  outline: 2px solid #000;
+  margin-bottom: 3.6rem;
+  box-shadow: 5px 5px #000;
+  margin-top: 3.6rem;
+  margin-bottom: 12rem;
+  &-title {
+    background-color: #48d0e2;
+    border-bottom: 2px solid #000;
+    text-align: center;
+    padding: 1rem;
+    font-size: 2.4rem;
+  }
+  &-paragraph {
+    font-size: 1.4rem;
+    line-height: 1.7;
+    padding: 2.4rem;
+  }
+  &-div {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: column;
+  }
+  &-img {
+    outline: 2px solid #ffdca8;
+    margin: 2.4rem;
+    max-width: 33rem;
+    transition: all 0.8s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 5px 5px rgba($color: #555, $alpha: 0.4);
+    }
+  }
+}
+
+.moving {
+  transform: translateY(3.6rem);
+}
